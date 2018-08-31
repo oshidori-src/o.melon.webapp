@@ -1,0 +1,34 @@
+{
+    "name": "o.melon.webapp",
+    "version": "1.0.1",
+    "description": "PWA framework",
+    "main": "index.js",
+    "scripts": {
+        "prestart": "npm install",
+        "start": "node index.js",
+        "build": "node index.js --build",
+        "watch": "node index.js --watch",
+        "deploy": "node index.js --deploy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oshidori-src/o.melon.webapp.git"
+    },
+    "keywords": [
+        "o.melon, omelon, webapp, Oshidori, PWA, melon"
+    ],
+    "author": "Oshidori LLC",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/oshidori-src/o.melon.webapp/issues"
+    },
+    "homepage": "https://github.com/oshidori-src/o.melon.webapp#readme",
+    "dependencies": {
+        "o.melon": "^1.0.1",
+        "command-line-args": "^5.0.2",
+        "command-line-usage": "^5.0.5"
+    },
+    "engines": {
+        "node" : ">=6.14.3"
+    }
+}

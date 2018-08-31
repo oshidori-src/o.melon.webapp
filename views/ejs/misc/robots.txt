@@ -1,0 +1,7 @@
+# robots.txt for <%= om.homeURL %>
+
+# Allow crawling for all content
+User-agent: *
+Allow: *
+
+Sitemap: <%= om.homeURL %>/sitemap.xml

@@ -1,0 +1,49 @@
+/**
+ * @license
+ * Copyright 2018 Oshidori LLC. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+/**
+ * @name header
+ * @memberOf o.melon.views.sass.components
+ * @overview Styles for header component.
+ */
+
+
+.mdl-layout__header {
+    transition-property: max-height, box-shadow, background;
+    position: fixed;
+}
+
+.mdl-layout__header a,
+.mdl-layout__header button,
+.mdl-layout__header i {
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+}
+
+.mdl-layout__header .logo img,
+.mdl-layout__drawer .logo img {
+    -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, .6));
+    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, .6));
+}
+
+.mdl-layout__header.is-casting-shadow {
+    background: get_rgb($color-primary);
+}
+
+.mdl-layout__header .mdl-navigation__link > .mdl-button {
+    color: get_rgb($color-white);
+}
